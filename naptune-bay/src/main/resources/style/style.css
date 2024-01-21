@@ -1,0 +1,41 @@
+.lablebtn{
+    -fx-border-color: #000000;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-text-alignment: Center;
+}
+
+.btncrud{
+    -fx-background-color: transparent;
+    -fx-border-color: #000000;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+.btncrud:hover{
+    -fx-background-color: #ffcd62;
+    -fx-text-fill: #000000
+}
+.textBox{
+    -fx-font-size: 20;
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-border-color: #000000;
+    -fx-text-fill: #000000;
+
+}
+.updatebtn{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #ffea00;
+    -fx-text-fill: #000000;
+}
+.loginbtn{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #ffc64b;
+    -fx-text-fill: #000000;
+}
+.loginbtn:hover{
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}

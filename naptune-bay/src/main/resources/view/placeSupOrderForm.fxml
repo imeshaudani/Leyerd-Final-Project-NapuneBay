@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="632.0" prefWidth="1038.0" style="-fx-background-color: F5E8B7;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.naptune.Controller.PlaceSupOrderFormController">
+   <children>
+      <ImageView fitHeight="695.0" fitWidth="1131.0" layoutX="-2.0" layoutY="-3.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Leonardo_Diffusion_XL_resturant_customers_images_1%20(1).jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtOrderId" layoutX="78.0" layoutY="126.0" prefHeight="39.0" prefWidth="191.0" promptText="OrderID" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSupName" layoutX="816.0" layoutY="122.0" prefHeight="39.0" prefWidth="191.0" promptText="SupName" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtOrderDate" layoutX="324.0" layoutY="123.0" prefHeight="39.0" prefWidth="191.0" promptText="OrderDate" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUnitPrice" layoutX="555.0" layoutY="187.0" prefHeight="39.0" prefWidth="191.0" promptText="UnitPrice" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDescription" layoutX="319.0" layoutY="187.0" prefHeight="39.0" prefWidth="191.0" promptText="Description" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQtyOnHand" layoutX="795.0" layoutY="189.0" prefHeight="39.0" prefWidth="191.0" promptText="QtyOnHand" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="26.0" layoutY="33.0" prefHeight="40.0" prefWidth="364.0" text="Place Order Form" textFill="#f75c02">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSupId" layoutX="585.0" layoutY="119.0" onAction="#cmbSupOnAction" prefHeight="39.0" prefWidth="191.0" promptText="SupId" styleClass="textBox" />
+      <ComboBox fx:id="cmbStockId" layoutX="81.0" layoutY="189.0" onAction="#cmbStockOnAction" prefHeight="39.0" prefWidth="191.0" promptText="StockId" styleClass="textBox" />
+      <TextField fx:id="txtQty" layoutX="565.0" layoutY="270.0" onAction="#txtQtyOnAction" prefHeight="39.0" prefWidth="191.0" promptText="Qty" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAddToCart" layoutX="799.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" prefHeight="40.0" prefWidth="119.0" styleClass="btncrud" text="Add to cart" textFill="#ab0606">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="tblOrderCart" layoutX="129.0" layoutY="324.0" prefHeight="233.0" prefWidth="785.0">
+        <columns>
+          <TableColumn fx:id="colStockId" prefWidth="113.66667175292969" text="StockId" />
+          <TableColumn fx:id="colDescription" prefWidth="171.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="116.66665649414062" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="127.33334350585938" text="UnitPrice" />
+            <TableColumn fx:id="colTotal" prefWidth="121.0" text="Total" />
+            <TableColumn fx:id="colAction" prefWidth="134.33331298828125" text="Action" />
+        </columns>
+      </TableView>
+      <Button layoutX="880.0" layoutY="563.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="40.0" prefWidth="115.0" styleClass="btncrud" text="PlaceOrder" textFill="#ab0606">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="739.0" layoutY="564.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="40.0" prefWidth="115.0" styleClass="btncrud" text="Back" textFill="#e80505">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtNetTotal" layoutX="15.0" layoutY="573.0" prefHeight="39.0" prefWidth="191.0" promptText="New Total" styleClass="lablebtn" text="Net Total">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

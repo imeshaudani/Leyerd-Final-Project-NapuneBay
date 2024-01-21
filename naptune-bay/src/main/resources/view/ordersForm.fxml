@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="632.0" prefWidth="1036.0" style="-fx-background-color: F5E8B7;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.naptune.Controller.OrdersFormController">
+   <children>
+      <ImageView fitHeight="1306.0" fitWidth="1154.0" layoutX="-7.0" layoutY="-11.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/spencer-davis-5dsZnCVDHd0-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtId" layoutX="41.0" layoutY="100.0" onAction="#btnSearchOnAction" prefHeight="39.0" prefWidth="191.0" promptText="Order-Id" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDetails" layoutX="666.0" layoutY="103.0" prefHeight="39.0" prefWidth="191.0" promptText="Details" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblOrder" layoutX="55.0" layoutY="292.0" prefHeight="301.0" prefWidth="931.0">
+         <columns>
+            <TableColumn fx:id="colOrder_Id" prefWidth="206.0" text="Order_Id" />
+            <TableColumn fx:id="colName" prefWidth="201.0" text="Name" />
+            <TableColumn fx:id="colDate" prefWidth="196.0" text="Date" />
+            <TableColumn fx:id="colDetails" minWidth="0.0" prefWidth="327.0" text="Details" />
+         </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="2.0" prefHeight="83.0" prefWidth="308.0" text="Order Manage" textFill="#f75c02">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="410.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="btncrud" text="Save" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="564.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="btncrud" text="Update" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="720.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="btncrud" text="Delete" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="867.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="110.0" styleClass="btncrud" text="Clear" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtName" layoutX="245.0" layoutY="101.0" prefHeight="39.0" prefWidth="191.0" promptText="Name" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="840.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnItemMenuOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="btncrud" text="ItemMenu" textFill="#e80505">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtdate" layoutX="455.0" layoutY="102.0" prefHeight="39.0" prefWidth="191.0" promptText="Date" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

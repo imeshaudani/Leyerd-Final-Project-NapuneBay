@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="632.0" prefWidth="1036.0" style="-fx-background-color: F5E8B7;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.naptune.Controller.EmployeeFormController">
+   <children>
+      <ImageView fitHeight="856.0" fitWidth="1137.0" layoutX="-2.0" layoutY="-1.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Leonardo_Diffusion_XL_resturant_customers_images_1%20(1).jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEmpId" layoutX="28.0" layoutY="99.0" onAction="#txtSearchOnAction" prefHeight="39.0" prefWidth="191.0" promptText="Emp_Id" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="240.0" layoutY="99.0" prefHeight="39.0" prefWidth="191.0" promptText="Name" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="451.0" layoutY="99.0" prefHeight="39.0" prefWidth="191.0" promptText="Address" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblEmployee" layoutX="79.0" layoutY="300.0" prefHeight="280.0" prefWidth="870.0">
+         <columns>
+            <TableColumn fx:id="colEmpId" prefWidth="206.0" text="EmpId" />
+            <TableColumn fx:id="colName" prefWidth="176.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="252.0" text="Address" />
+            <TableColumn fx:id="colTel" minWidth="0.0" prefWidth="235.0" text="Tel" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtTel" layoutX="657.0" layoutY="99.0" prefHeight="39.0" prefWidth="191.0" promptText="Tel" styleClass="lablebtn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="35.0" layoutY="2.0" prefHeight="83.0" prefWidth="325.0" text="Employee Manage" textFill="#f75c02">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="405.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="20.0" prefWidth="110.0" styleClass="btncrud" text="Save" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="547.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="20.0" prefWidth="110.0" styleClass="btncrud" text="Update" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="694.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="20.0" prefWidth="110.0" styleClass="btncrud" text="Delete" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="833.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="20.0" prefWidth="110.0" styleClass="btncrud" text="Clear" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="717.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnSalaryOnAction" prefHeight="33.0" prefWidth="131.0" styleClass="btncrud" text="Salary" textFill="#e81212">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="873.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnAttendanceOnAction" prefHeight="35.0" prefWidth="144.0" styleClass="btncrud" text="Attendance" textFill="#e81212">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
